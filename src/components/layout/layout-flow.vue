@@ -78,7 +78,7 @@
             icon
           >
             <v-icon>mdi-github</v-icon>
-          </v-btn> / Power by <strong>@EthanLee</strong>
+          </v-btn> / 勾搭我<strong>1294485765@qq.com</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -98,7 +98,7 @@ export default class LayoutFlow extends Vue {
 
   private goHome() {
     this.$router.push({
-      path: '/home'
+      path: '/index'
     });
   }
   private onScroll() {

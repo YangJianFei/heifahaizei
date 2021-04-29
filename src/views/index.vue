@@ -2,6 +2,7 @@
   <div>
     <v-row>
       <v-col
+        cols="12"
         sm="4"
         lg="4"
         v-for="(card,index) in cardList"
@@ -10,7 +11,7 @@
         <v-skeleton-loader
           elevation="2"
           v-if="loading"
-          type="card,card-heading,actions"
+          type="card-heading,card,actions"
         ></v-skeleton-loader>
         <v-card
           height="100%"
@@ -28,7 +29,7 @@
           <v-img
             height="250"
             :src="card.img"
-            gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
+            gradient="to top right, rgba(100,115,201,.1), rgba(25,32,72,.1)"
           ></v-img>
           <v-card-text>{{card.text}}</v-card-text>
           <v-spacer></v-spacer>

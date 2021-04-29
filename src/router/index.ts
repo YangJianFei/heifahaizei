@@ -18,7 +18,7 @@ const routes: Array<RouteConfig> = [
         name: 'Index',
         component: () => import('../views/index.vue'),
         meta: {
-          title: '个人主页'
+          title: '网站导航'
         }
       },
       {
@@ -34,7 +34,7 @@ const routes: Array<RouteConfig> = [
         name: 'NotFound',
         component: () => import('../components/tip/not-found.vue'),
         meta: {
-          title: '404'
+          title: '不知所踪'
         }
       }
     ]

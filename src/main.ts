@@ -6,6 +6,7 @@ import vuetify from './plugins/vuetify'
 import tool from './utils/tool'
 import axios from './utils/request'
 import '../public/font/iconfont.css'
+import '@/assets/scss/common.scss'
 
 Vue.config.productionTip = false
 Vue.prototype.$tool = tool
