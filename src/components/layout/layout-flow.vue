@@ -1,25 +1,10 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="deep-purple"
-      dark
-      prominent
-      shrink-on-scroll
-      fade-img-on-scroll
-      elevate-on-scroll
-      src="https://picsum.photos/1920/128?random"
-    >
+    <v-app-bar app color="deep-purple" dark prominent shrink-on-scroll fade-img-on-scroll elevate-on-scroll src="https://picsum.photos/1920/128?random">
       <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
-        ></v-img>
+        <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"></v-img>
       </template>
-      <div
-        class="d-flex align-center app-logo"
-        @click="goHome"
-      >
+      <div class="d-flex align-center app-logo" @click="goHome">
         <!-- <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -32,11 +17,7 @@
       </div>
       <v-toolbar-title class="text-h5">{{$route.meta?$route.meta.title||'黑发海贼':'黑发海贼'}}</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        href="https://github.com/YangJianFei/flyyang"
-        target="_blank"
-        icon
-      >
+      <v-btn href="https://github.com/YangJianFei/flyyang" target="_blank" icon>
         <v-icon>mdi-github</v-icon>
       </v-btn>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -47,36 +28,32 @@
         <router-view></router-view>
       </v-container>
       <v-fab-transition>
-        <v-btn
-          v-show="showUp"
-          color="primary"
-          dark
-          fixed
-          bottom
-          right
-          fab
-          v-scroll="onScroll"
-          @click="goTop"
-        >
+        <v-btn v-show="showUp" color="primary" dark fixed bottom right fab v-scroll="onScroll" @click="goTop">
           <v-icon>mdi-publish</v-icon>
         </v-btn>
       </v-fab-transition>
     </v-main>
     <v-footer padless>
-      <v-card
-        flat
-        tile
-        width="100%"
-        class="text-center"
-      >
+      <v-card flat tile width="100%" class="text-center">
+        <v-container>
+          <v-row>
+            <v-col cols="12" sm="4"></v-col>
+            <v-col cols="12" sm="4">
+              <v-lazy>
+                <div>
+                  <img class="qqqun" src="@/assets/img/qqqun.jpg">
+                  <v-card-text>
+                    <strong>一张神奇的二维码</strong>
+                  </v-card-text>
+                </div>
+              </v-lazy>
+            </v-col>
+          </v-row>
+        </v-container>
         <v-divider></v-divider>
         <v-card-text>
           {{ new Date().getFullYear() }} — <strong>@flyyang</strong>
-          <v-btn
-            href="https://github.com/YangJianFei/flyyang"
-            target="_blank"
-            icon
-          >
+          <v-btn href="https://github.com/YangJianFei/flyyang" target="_blank" icon>
             <v-icon>mdi-github</v-icon>
           </v-btn> / 勾搭我<strong>1294485765@qq.com</strong>
         </v-card-text>
@@ -123,5 +100,9 @@ export default class LayoutFlow extends Vue {
   font-size: 43px;
   margin-top: -7px;
   margin-right: 12px;
+}
+.qqqun {
+  width: 100%;
+  max-width: 300px;
 }
 </style>
