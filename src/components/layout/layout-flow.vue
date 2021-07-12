@@ -56,6 +56,7 @@
           <v-btn href="https://github.com/YangJianFei/flyyang" target="_blank" icon>
             <v-icon>mdi-github</v-icon>
           </v-btn> / 勾搭我<strong>1294485765@qq.com</strong>
+          <v-btn href="http://beian.miit.gov.cn/" target="_blank" text>粤ICP备2021095708号</v-btn>
         </v-card-text>
       </v-card>
     </v-footer>
