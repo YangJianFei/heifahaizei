@@ -52,7 +52,7 @@
         </v-container>
         <v-divider></v-divider>
         <v-card-text>
-          {{ new Date().getFullYear() }} — <strong>@flyyang</strong>
+          2020 — {{ new Date().getFullYear() }} <strong>@flyyang</strong>
           <v-btn href="https://github.com/YangJianFei/flyyang" target="_blank" icon>
             <v-icon>mdi-github</v-icon>
           </v-btn> / 勾搭我<strong>1294485765@qq.com</strong>
