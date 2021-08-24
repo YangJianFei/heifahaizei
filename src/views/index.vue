@@ -63,6 +63,14 @@ export default class Home extends Vue {
     },
     {
       loading: false,
+      img: require('@/assets/img/docker.png'),
+      title: 'docker镜像 superset',
+      text: '基于apache/superset制作的镜像，已汉化、开放公共权限、iframe嵌套等。开箱即用',
+      url: 'https://hub.docker.com/repository/docker/heifahaizei/superset.apache',
+      btnText: '围观'
+    },
+    {
+      loading: false,
       img: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
       title: '敬请期待',
       text: '......................',
