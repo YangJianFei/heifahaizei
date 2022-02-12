@@ -71,6 +71,14 @@ export default class Home extends Vue {
     },
     {
       loading: false,
+      img: require('@/assets/img/fireworks.gif'),
+      title: '一起来看烟花',
+      text: '原生三件套打造的烟花效果。',
+      url: 'https://fireworks.heifahaizei.com',
+      btnText: '我也要看烟花'
+    },
+    {
+      loading: false,
       img: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
       title: '敬请期待',
       text: '......................',
