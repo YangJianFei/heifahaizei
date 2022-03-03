@@ -79,6 +79,14 @@ export default class Home extends Vue {
     },
     {
       loading: false,
+      img: require('@/assets/img/vue3x-baidu-map.png'),
+      title: '百度地图npm包',
+      text: '基于vue3+vite的百度地图组件',
+      url: 'https://github.com/YangJianFei/vue3x-baidu-map',
+      btnText: '我现在就要看'
+    },
+    {
+      loading: false,
       img: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
       title: '敬请期待',
       text: '......................',
