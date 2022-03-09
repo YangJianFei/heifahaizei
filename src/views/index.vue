@@ -31,69 +31,12 @@ const gradients = [
   ['purple', 'violet'],
   ['#00c6ff', '#F0F', '#FF0'],
   ['#f72047', '#ffd200', '#1feaea'],
-]
+];
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class Home extends Vue {
-  private cardList = [
-    {
-      loading: false,
-      img: require('@/assets/img/note.png'),
-      title: '个人笔记网站',
-      text: '记录日常的各种笔记',
-      url: 'http://note.heifahaizei.com',
-      btnText: '去看看'
-    },
-    {
-      loading: false,
-      img: require('@/assets/img/ai.png'),
-      title: 'AI项目',
-      text: '一个图片处理的ai项目',
-      url: 'http://ai.heifahaizei.com',
-      btnText: '去看看'
-    },
-    {
-      loading: false,
-      img: require('@/assets/img/component/longscroll.gif'),
-      title: 'npm组件 vue-long-scroll',
-      text: '基于vue长列表优化无限滚动(只3d渲染视窗内元素)。',
-      url: 'https://github.com/YangJianFei/vue-long-scroll',
-      btnText: '去看看'
-    },
-    {
-      loading: false,
-      img: require('@/assets/img/docker.png'),
-      title: 'docker镜像 superset',
-      text: '基于apache/superset制作的镜像，已汉化、开放公共权限、iframe嵌套等。开箱即用',
-      url: 'https://hub.docker.com/repository/docker/heifahaizei/superset.apache',
-      btnText: '围观'
-    },
-    {
-      loading: false,
-      img: require('@/assets/img/fireworks.gif'),
-      title: '一起来看烟花',
-      text: '原生三件套打造的烟花效果。',
-      url: 'https://fireworks.heifahaizei.com',
-      btnText: '我也要看烟花'
-    },
-    {
-      loading: false,
-      img: require('@/assets/img/vue3x-baidu-map.png'),
-      title: '百度地图npm包',
-      text: '基于vue3+vite的百度地图组件',
-      url: 'https://github.com/YangJianFei/vue3x-baidu-map',
-      btnText: '我现在就要看'
-    },
-    {
-      loading: false,
-      img: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
-      title: '敬请期待',
-      text: '......................',
-      url: '',
-      btnText: '看不了'
-    },
-  ];
+  private cardList = [];
   private sparkLineData = {
     width: 2,
     radius: 10,
@@ -108,11 +51,21 @@ export default class Home extends Vue {
     autoLineWidth: false
   }
   private loading = true;
-
-  mounted() {
+  private promiseLoading = new Promise((resolve, reject) => {
     setTimeout(() => {
-      this.loading = false;
-    }, 2000);
+      resolve('');
+    }, 300);
+  });
+
+  created() {
+    fetch('./data/project.json')
+      .then(res => res.json())
+      .then((data: any) => {
+        this.cardList = data.indexProject;
+        this.promiseLoading.then(() => {
+          this.loading = false;
+        });
+      });
   }
 
   private go(url) {
