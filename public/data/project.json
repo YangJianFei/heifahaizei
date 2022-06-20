@@ -50,6 +50,14 @@
         },
         {
             "loading": false,
+            "img": "/images/chrome.png",
+            "title": "谷歌丝滑浏览扩展程序",
+            "text": "谷歌浏览器扩展程序：自动展开折叠框、隐藏框、关闭广告等。。。",
+            "url": "https://github.com/YangJianFei/chrome-plugin-snow",
+            "btnText": "立即安排"
+        },
+        {
+            "loading": false,
             "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png",
             "title": "敬请期待",
             "text": "......................",
