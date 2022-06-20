@@ -58,7 +58,7 @@ export default class Home extends Vue {
   });
 
   created() {
-    fetch('./data/project.json')
+    fetch('./data/project.json?t=' + new Date().getTime())
       .then(res => res.json())
       .then((data: any) => {
         this.cardList = data.indexProject;
