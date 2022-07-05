@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "10617577",
+      "name": "登录-用户",
+      "font_class": "denglu-yonghu",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "7714975",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
       "icon_id": "21277083",
       "name": "冒险 海贼 骷髅 海盗",
       "font_class": "maoxian-copy",

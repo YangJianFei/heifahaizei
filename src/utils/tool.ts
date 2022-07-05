@@ -1,80 +1,13 @@
 /**
- * @author yjf.fly
+ * Author: yang jian fei
+ * Email: 1294485765@qq.com
+ * Created Date: Thursday, June 30th 2022, 9:34:35 am
+ * Modified By: yang jian fei
+ * Desc: desc
+ * Copyright (c) 2022 黑发
  */
-const getServeUrl = (): string => {
-  // if (process.env.NODE_ENV == "production") {
-  //   return process.env.VUE_APP_SERVE_URL || window.location.origin;
-  // } else {
-  // return "http://192.168.2.34:9098";
-  // return "http://ccf-scheme.aieraonline.cn";
-  // return "http://192.168.2.79:9098";
-  return "http://192.168.2.49:7777";
-  // return "http://192.168.2.41:9090";
-  // return "http://192.168.2.47:771";
-  // }
+
+export const verifyUrl = (url: string): boolean => {
+    return /(^#)|(^http(s*):\/\/[^\s]+\.[^\s]+)/.test(url);
 };
 
-const setToken = token => {
-  localStorage.setItem("token", token);
-};
-
-const getToken = () => {
-  return localStorage.getItem("token");
-};
-
-const getRequestHeader = () => {
-  return {
-    authorization: getToken()
-  };
-};
-
-const getResourceUrl = url => {
-  return getServeUrl() + url;
-}
-
-const loading = () => {
-  console.log('loading');
-}
-
-const msg = (option: any) => {
-  console.log(option);
-}
-
-const dealJSONData = function (data) {
-  let deal = function (data) {
-    if (Array.isArray(data)) {
-      data.forEach(function (item, index) {
-        if (item === null) {
-          data[index] = '';
-        } else {
-          deal(item);
-        }
-      });
-    } else if (typeof (data) == "object" && Object.prototype.toString.call(data).toLowerCase() == "[object object]" && !data.length) {
-      for (let k in data) {
-        if (data[k] === null) {
-          data[k] = '';
-        } else {
-          deal(data[k]);
-        }
-      }
-    }
-  };
-  deal(data);
-};
-
-const verifyUrl = url => {
-  return /(^#)|(^http(s*):\/\/[^\s]+\.[^\s]+)/.test(url);
-};
-
-export default {
-  getServeUrl,
-  setToken,
-  getToken,
-  getRequestHeader,
-  loading,
-  msg,
-  dealJSONData,
-  getResourceUrl,
-  verifyUrl
-};
