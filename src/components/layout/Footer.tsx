@@ -13,6 +13,8 @@ const Footer: FC = () => {
     return (
         <>
             <div className='border-t p16 tx-center'>
+                <span>翻牌次数:</span>
+                <img className="mx12" src="https://profile-counter.glitch.me/heifahaizei/count.svg" alt="翻牌次数" />
                 2020-{new Date().getFullYear()}
                 <a className='mx12' href='https://github.com/YangJianFei' target='_blank' rel='noopener noreferrer'>
                     <Icon name='github' style={{ verticalAlign: 'middle' }} />
