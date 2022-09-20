@@ -6,7 +6,7 @@
  * 
  * Copyright (c) 2022 黑发
  */
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Button, Card } from 'antd';
 import Masonry from "react-masonry-css";
@@ -25,11 +25,13 @@ const Index: FC = () => {
     const navigate = useNavigate();
     const [cardList, setCardList] = useState<ICard[]>([]);
 
-    fetch('./data/project.json?t=' + new Date().getTime())
-        .then(res => res.json())
-        .then((data: IProjectData) => {
-            setCardList(data.indexProject);
-        });
+    useEffect(() => {
+        fetch('./data/project.json?t=' + new Date().getTime())
+            .then(res => res.json())
+            .then((data: IProjectData) => {
+                setCardList(data.indexProject);
+            });
+    }, []);
 
     const showDetail = (url: string) => {
         if (verifyUrl(url)) {
