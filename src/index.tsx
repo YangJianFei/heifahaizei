@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 import MyRoutes from './router';
 import Loading from 'components/loading';
+import store from './reduce/store';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,9 +15,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <Suspense fallback={<Loading />}>
-        <MyRoutes />
-      </Suspense>
+      <Provider store={store}>
+        <Suspense fallback={<Loading />}>
+          <MyRoutes />
+        </Suspense>
+      </Provider>
     </HashRouter>
   </React.StrictMode>
 );

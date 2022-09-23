@@ -9,8 +9,20 @@
 const path = require("path");
 const resolve = dir => path.resolve(__dirname, dir);
 const CracoLessPlugin = require('craco-less');
+const config = require('./env.ts');
 
 module.exports = {
+    devServer: {
+        proxy: {
+            '/api': {
+                target: config.target,
+                changeOrigin: true,
+                pathRewrite: {
+                    "^/api": ''
+                }
+            }
+        },
+    },
     // antd 按需引入样式
     babel: {
         plugins: [
@@ -45,7 +57,9 @@ module.exports = {
             '@': resolve("src"),
             'components': resolve("src/components"),
             'pages': resolve("src/pages"),
-            'utils': resolve("src/utils")
+            'utils': resolve("src/utils"),
+            'api': resolve("src/api"),
+            'reduce': resolve("src/reduce")
         },
         configure: (webpackConfig, { env, paths }) => {
             paths.appBuild = 'docs';
