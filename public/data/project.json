@@ -5,7 +5,7 @@
             "img": "./images/note.png",
             "title": "个人笔记网站",
             "text": "记录日常的各种笔记",
-            "url": "http://note.heifahaizei.com",
+            "url": "https://note.heifa.site",
             "btnText": "挖宝藏了",
             "updateTime": "2021-04-27 11:15"
         },
@@ -14,7 +14,7 @@
             "img": "./images/vue3x-baidu-map.png",
             "title": "百度地图npm包",
             "text": "基于vue3+vite的百度地图组件",
-            "url": "https://map.heifahaizei.com",
+            "url": "https://map.heifa.site",
             "btnText": "我现在就要看",
             "updateTime": "2022-03-08 12:38"
         },
@@ -23,7 +23,7 @@
             "img": "./images/ai.png",
             "title": "AI项目",
             "text": "一个图片处理的ai项目",
-            "url": "http://ai.heifahaizei.com",
+            "url": "https://ai.heifa.site",
             "btnText": "去看看",
             "updateTime": "2021-02-15 16:00"
         },
@@ -50,7 +50,7 @@
             "img": "./images/fireworks.gif",
             "title": "一起来看烟花",
             "text": "原生三件套打造的烟花效果。",
-            "url": "https://fireworks.heifahaizei.com",
+            "url": "https://fireworks.heifa.site",
             "btnText": "我也要看烟花",
             "updateTime": "2022-01-26 09:36"
         },
