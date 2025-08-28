@@ -2,21 +2,48 @@
     "indexProject": [
         {
             "loading": false,
-            "img": "./images/note.png",
-            "title": "个人笔记网站",
-            "text": "记录日常的各种笔记",
-            "url": "https://note.heifa.site",
-            "btnText": "挖宝藏了",
-            "updateTime": "2021-04-27 11:15"
-        },
-        {
-            "loading": false,
             "img": "./images/vue3x-baidu-map.png",
             "title": "百度地图npm包",
             "text": "基于vue3+vite的百度地图组件",
             "url": "https://map.heifa.site",
             "btnText": "我现在就要看",
             "updateTime": "2022-03-08 12:38"
+        },
+        {
+            "loading": false,
+            "img": "./images/umeng-push.png.png",
+            "title": "友盟推送flutter+fcm(谷歌推送)",
+            "text": "友盟推送flutter插件，基础了谷歌推送，支持国内厂商",
+            "url": "https://pub.dev/packages/umeng_push_sdk_contain_fcm",
+            "btnText": "Let me see see",
+            "updateTime": "2025-08-28 17:30"
+        },
+        {
+            "loading": false,
+            "img": "./images/chrome.png",
+            "title": "谷歌丝滑浏览扩展程序",
+            "text": "谷歌浏览器扩展程序：自动展开折叠框、隐藏框、关闭广告等。看不惯哪个网站的弹窗等交互可根据自己喜好下载源码参考修改",
+            "url": "https://github.com/YangJianFei/chrome-plugin-snow",
+            "btnText": "立即安排",
+            "updateTime": "2022-06-20 11:16"
+        },
+        {
+            "loading": false,
+            "img": "./images/fireworks.gif",
+            "title": "一起来看烟花",
+            "text": "原生三件套打造的烟花效果。",
+            "url": "https://fireworks.heifa.site",
+            "btnText": "我也要看烟花",
+            "updateTime": "2022-01-26 09:36"
+        },
+        {
+            "loading": false,
+            "img": "./images/note.png",
+            "title": "个人笔记网站",
+            "text": "记录日常的各种笔记",
+            "url": "https://note.heifa.site",
+            "btnText": "挖宝藏了",
+            "updateTime": "2021-04-27 11:15"
         },
         {
             "loading": false,
@@ -44,24 +71,6 @@
             "url": "https://hub.docker.com/repository/docker/heifahaizei/superset.apache",
             "btnText": "围观",
             "updateTime": "2021-08-05 18:00"
-        },
-        {
-            "loading": false,
-            "img": "./images/fireworks.gif",
-            "title": "一起来看烟花",
-            "text": "原生三件套打造的烟花效果。",
-            "url": "https://fireworks.heifa.site",
-            "btnText": "我也要看烟花",
-            "updateTime": "2022-01-26 09:36"
-        },
-        {
-            "loading": false,
-            "img": "./images/chrome.png",
-            "title": "谷歌丝滑浏览扩展程序",
-            "text": "谷歌浏览器扩展程序：自动展开折叠框、隐藏框、关闭广告等。。。",
-            "url": "https://github.com/YangJianFei/chrome-plugin-snow",
-            "btnText": "立即安排",
-            "updateTime": "2022-06-20 11:16"
         },
         {
             "loading": false,
