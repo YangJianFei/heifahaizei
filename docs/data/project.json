@@ -11,7 +11,7 @@
         },
         {
             "loading": false,
-            "img": "./images/umeng-push.png.png",
+            "img": "./images/umeng-push.png",
             "title": "友盟推送flutter+fcm(谷歌推送)",
             "text": "友盟推送flutter插件，基础了谷歌推送，支持国内厂商",
             "url": "https://pub.dev/packages/umeng_push_sdk_contain_fcm",
